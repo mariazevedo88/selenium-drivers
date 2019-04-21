@@ -33,7 +33,7 @@
 		
 		<selenium.version>3.141.59</selenium.version>
 		<selenium-driver.version>2.33.2</selenium-driver.version>
-		<jackson-databind.version>2.9.5</jackson-databind.version>
+		<jackson-databind.version>2.9.8</jackson-databind.version>
 		<poi.version>3.8</poi.version>
 		<log4j.version>1.2.17</log4j.version>
 		<junit-jupiter.version>5.4.0</junit-jupiter.version>
