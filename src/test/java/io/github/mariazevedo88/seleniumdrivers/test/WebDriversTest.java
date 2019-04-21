@@ -90,25 +90,8 @@ public class WebDriversTest {
 	}
 	
 	@Test
-	@DisplayName("Execute a Chrome web driver")
-	@Order(4)
-	public void executeChromeWebDriver() throws IOException {
-		
-		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-		
-		List<String> properties = new ArrayList<>();
-		
-		properties.add("--no-sandbox");
-		properties.add("--disable-extensions");
-		
-		WebDriver driver = chromeDriver.getDriver(downloadFilePath, properties, false);
-		assertNotNull(driver);
-		driver.quit();
-	}
-	
-	@Test
 	@DisplayName("Execute a Firefox web driver in headless mode")
-	@Order(5)
+	@Order(4)
 	public void executeFirefoxWebDriverInHeadlessMode() throws IOException {
 		
 		System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
@@ -119,23 +102,6 @@ public class WebDriversTest {
 		properties.add("--disable-extensions");
 		
 		WebDriver driver = firefoxDriver.getDriver(downloadFilePath, properties, true);
-		assertNotNull(driver);
-		driver.quit();
-	}
-	
-	@Test
-	@DisplayName("Execute a Firefox web driver")
-	@Order(6)
-	public void executeFirefoxWebDriver() throws IOException {
-		
-		System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-		
-		List<String> properties = new ArrayList<>();
-		
-		properties.add("--no-sandbox");
-		properties.add("--disable-extensions");
-		
-		WebDriver driver = firefoxDriver.getDriver(downloadFilePath, properties, false);
 		assertNotNull(driver);
 		driver.quit();
 	}
