@@ -44,6 +44,9 @@ public class WebDriversTest {
 	private String chromeDriverPath;
 	private String firefoxDriverPath;
 	
+	private String chromePath = "chromeDriverUnixPath";
+	private String firefoxPath = "firefoxDriverUnixPath";
+	
 	private Properties properties;
 	
 	/**
@@ -52,13 +55,11 @@ public class WebDriversTest {
 	 * @author Mariana Azevedo
 	 * @since 21/04/2019
 	 */
-	private void init() {
-		String chromePath = "chromeDriverUnixPath";
-		String firefoxPath = "chromeDriverUnixPath";
+	private void initiateAttributes() {
 		
 		if(ApplicationProperties.isWindows()) {
 			chromePath = "chromeDriverWindowsPath";
-			firefoxPath = "chromeDriverWindowsPath";
+			firefoxPath = "firefoxDriverWindowsPath";
 		}
 		
 		chromeDriverPath = ApplicationProperties.getRightPath(properties.getProperty(chromePath));
@@ -68,30 +69,30 @@ public class WebDriversTest {
 	
 	@BeforeAll
 	public void setUp() throws FileNotFoundException {
+		
 		chromeDriver = new ChromeWebDriverService();
 		firefoxDriver = new FirefoxWebDriverService();
 		
 		properties = ApplicationProperties.load("src/main/resources/application.properties");
-		
-		init();
+		initiateAttributes();
 	}
 	
 	@Test
-	@DisplayName("Create a Chrome web driver")
+	@DisplayName("Create a Chrome WebDriver")
 	@Order(1)
 	public void createChromeWebDriver() throws IOException {
 		assertNotNull(chromeDriver);
 	}
 	
 	@Test
-	@DisplayName("Create a Firefox web driver")
+	@DisplayName("Create a Firefox WebDriver")
 	@Order(2)
 	public void createFirefoxWebDriver() throws IOException {
 		assertNotNull(firefoxDriver);
 	}
 	
 	@Test
-	@DisplayName("Execute a Chrome web driver in headless mode")
+	@DisplayName("Execute a Chrome WebDriver in headless mode")
 	@Order(3)
 	public void executeChromeWebDriverInHeadlessMode() throws IOException {
 		
@@ -108,7 +109,7 @@ public class WebDriversTest {
 	}
 	
 	@Test
-	@DisplayName("Execute a Firefox web driver in headless mode")
+	@DisplayName("Execute a Firefox WebDriver in headless mode")
 	@Order(4)
 	public void executeFirefoxWebDriverInHeadlessMode() throws IOException {
 		

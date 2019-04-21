@@ -5,7 +5,7 @@ jdk:
   - oraclejdk8
 addons:
   chrome: stable
-  firefox: latest
+  firefox: "65.0"
 
 git:
   depth: 2 #clone repository to a maximum depth of 2 commits
