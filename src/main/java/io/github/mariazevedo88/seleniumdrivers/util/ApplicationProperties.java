@@ -61,14 +61,26 @@ public class ApplicationProperties {
 	 * @param key
 	 * @return String
 	 */
-	public static String fixPathOnWindows(String key) {
+	public static String getRightPath(String key) {
 		if(key != null) {
-			if(System.getProperty("os.name").toLowerCase().contains("windows")){
+			if(isWindows()){
 				key = key.replace("\\", "\\\\");
 			}else {
 				key = key.replace("\\", "/"); //unix
 			}
 		}
 		return key;
+	}
+	
+	/**
+	 * Method that verifies with the OS is Windows
+	 * 
+	 * @author Mariana Azevedo
+	 * @since 21/04/2019
+	 * 
+	 * @return boolean
+	 */
+	public static boolean isWindows() {
+		return System.getProperty("os.name").toLowerCase().contains("windows");
 	}
 }

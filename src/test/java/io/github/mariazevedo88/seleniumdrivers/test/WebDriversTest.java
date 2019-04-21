@@ -46,6 +46,26 @@ public class WebDriversTest {
 	
 	private Properties properties;
 	
+	/**
+	 * Method that initiates class attributes
+	 * 
+	 * @author Mariana Azevedo
+	 * @since 21/04/2019
+	 */
+	private void init() {
+		String chromePath = "chromeDriverUnixPath";
+		String firefoxPath = "chromeDriverUnixPath";
+		
+		if(ApplicationProperties.isWindows()) {
+			chromePath = "chromeDriverWindowsPath";
+			firefoxPath = "chromeDriverWindowsPath";
+		}
+		
+		chromeDriverPath = ApplicationProperties.getRightPath(properties.getProperty(chromePath));
+		firefoxDriverPath = ApplicationProperties.getRightPath(properties.getProperty(firefoxPath));
+		downloadFilePath = ApplicationProperties.getRightPath(properties.getProperty("downloadPath"));
+	}
+	
 	@BeforeAll
 	public void setUp() throws FileNotFoundException {
 		chromeDriver = new ChromeWebDriverService();
@@ -53,9 +73,7 @@ public class WebDriversTest {
 		
 		properties = ApplicationProperties.load("src/main/resources/application.properties");
 		
-		chromeDriverPath = ApplicationProperties.fixPathOnWindows(properties.getProperty("chromeDriverPath"));
-		firefoxDriverPath = ApplicationProperties.fixPathOnWindows(properties.getProperty("firefoxDriverPath"));
-		downloadFilePath = ApplicationProperties.fixPathOnWindows(properties.getProperty("downloadPath"));
+		init();
 	}
 	
 	@Test
