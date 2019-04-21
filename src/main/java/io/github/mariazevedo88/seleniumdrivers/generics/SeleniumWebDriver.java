@@ -51,7 +51,7 @@ public interface SeleniumWebDriver {
 	 * @since 20/04/2019
 	 * 
 	 * @param params
-	 * @return Map<String, Object>
+	 * @return Map
 	 */
 	public Map<String, Object> configuratingDriverExecutionParams(Map<String, String> params);
 	
@@ -62,7 +62,7 @@ public interface SeleniumWebDriver {
 	 * @since 20/04/2019
 	 * 
 	 * @param downloadFilePath
-	 * @return Map<String, String>
+	 * @return Map
 	 */
 	public Map<String, String> configurationGenericBrowserParams(String downloadFilePath);
 	
@@ -73,7 +73,7 @@ public interface SeleniumWebDriver {
 	 * @since 20/04/2019
 	 * 
 	 * @param downloadFilePath
-	 * @return Map<String, Object>
+	 * @return Map
 	 */
 	public Map<String, Object> configuratingPreferences(String downloadFilePath);
 

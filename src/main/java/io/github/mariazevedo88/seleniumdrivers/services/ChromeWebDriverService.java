@@ -34,7 +34,7 @@ public class ChromeWebDriverService implements SeleniumWebDriver{
 	private static Logger logger = Logger.getLogger(ChromeWebDriverService.class);
 	
 	/**
-	 * @see SeleniumWebDriver#getDriver(String)
+	 * @see SeleniumWebDriver#getDriver(String, List, boolean)
 	 */
 	@Override
 	public WebDriver getDriver(String downloadFilePath, List<String> browserProperties, boolean headless) throws IOException {

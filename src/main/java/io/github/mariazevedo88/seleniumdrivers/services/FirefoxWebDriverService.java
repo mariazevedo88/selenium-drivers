@@ -34,7 +34,7 @@ public class FirefoxWebDriverService implements SeleniumWebDriver{
 	private static Logger logger = Logger.getLogger(FirefoxWebDriverService.class);
 
 	/**
-	 * @see SeleniumWebDriver#getDriver(String)
+	 * @see SeleniumWebDriver#getDriver(String, List, boolean)
 	 */
 	@Override
 	public WebDriver getDriver(String downloadFilePath, List<String> browserProperties, boolean headless) throws IOException {
