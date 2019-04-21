@@ -2,7 +2,7 @@
   	<modelVersion>4.0.0</modelVersion>
   	<groupId>io.github.mariazevedo88</groupId>
   	<artifactId>selenium-drivers</artifactId>
-  	<version>1.0.0-SNAPSHOT</version>
+  	<version>1.0.0</version>
   
   	<name>selenium-drivers</name>
   	<description>Project that implements services that execute drivers used in Selenium</description>
@@ -159,7 +159,7 @@
 			  	<artifactId>maven-assembly-plugin</artifactId>
 			  	<configuration>
 			    	<archive>
-			      		<manifest><mainClass></mainClass></manifest>
+			      		<manifest><mainClass /></manifest>
 			    	</archive>
 			    	<descriptorRefs>
 			      		<descriptorRef>jar-with-dependencies</descriptorRef>
@@ -182,7 +182,7 @@
 				<configuration>
 					<archive>
 				    	<manifest>
-							<mainClass></mainClass>
+							<mainClass />
 				    	</manifest>
 				  	</archive>
 				</configuration>
