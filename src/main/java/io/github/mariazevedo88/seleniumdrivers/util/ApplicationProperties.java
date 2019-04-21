@@ -34,8 +34,12 @@ public class ApplicationProperties {
 	}
 	
 	public static String fixPathOnWindows(String key) {
-		if(System.getProperty("os.name").toLowerCase().contains("windows") && key != null){
-			key = key.replace("\\", "\\\\");
+		if(key != null) {
+			if(System.getProperty("os.name").toLowerCase().contains("windows")){
+				key = key.replace("\\", "\\\\");
+			}else {
+				key = key.replace("\\", "/"); //unix
+			}
 		}
 		return key;
 	}
