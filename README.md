@@ -1,11 +1,14 @@
 # selenium-drivers
 
-Project that implements services that execute drivers used in Selenium.
+[![Build Status](https://travis-ci.org/mariazevedo88/selenium-drivers.svg?branch=master)](https://travis-ci.org/mariazevedo88/selenium-drivers?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/mariazevedo88/selenium-drivers/badge.svg?branch=master)](https://coveralls.io/github/mariazevedo88/selenium-drivers?branch=master)
 
 ## About selenium-drivers
 
+Project that implements services that execute drivers used in Selenium.
+
 * Currently, we have the implementation of two drivers: [Chrome](http://chromedriver.chromium.org/downloads) and [Firefox](https://github.com/mozilla/geckodriver/releases).
-* The drivers are located in the `src/main/resource/drivers`.
+* The drivers are located in the `src/main/resource/drivers` (Windows and Linux versions).
 * To run the application, you can change the paths of the drivers to another location. You must also populate the `downloadPath` parameter.
 
 ## Dependencies

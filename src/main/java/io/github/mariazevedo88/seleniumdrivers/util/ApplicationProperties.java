@@ -17,6 +17,16 @@ public class ApplicationProperties {
 
 	private ApplicationProperties() {}
 	
+	/**
+	 * Method that load application.properties file
+	 * 
+	 * @author Mariana Azevedo
+	 * @since 21/04/2019
+	 * 
+	 * @param propertiesPath
+	 * @return Properties
+	 * @throws FileNotFoundException
+	 */
 	public static Properties load(String propertiesPath) throws FileNotFoundException {
 
 		prop = new Properties();
@@ -29,10 +39,28 @@ public class ApplicationProperties {
 		return prop;
 	}
 	
+	/**
+	 * Method that retrieves a key from the properties file
+	 * 
+	 * @author Mariana Azevedo
+	 * @since 21/04/2019
+	 * 
+	 * @param key
+	 * @return String
+	 */
 	public static String getKey(String key) {
 		return prop.getProperty(key);
 	}
 	
+	/**
+	 * Method that corrects the path according the OS
+	 * 
+	 * @author Mariana Azevedo
+	 * @since 21/04/2019
+	 * 
+	 * @param key
+	 * @return String
+	 */
 	public static String fixPathOnWindows(String key) {
 		if(key != null) {
 			if(System.getProperty("os.name").toLowerCase().contains("windows")){
