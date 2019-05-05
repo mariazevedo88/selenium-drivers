@@ -4,7 +4,7 @@ dist: trusty
 jdk:
   - oraclejdk8
 addons:
-  chrome: "73.0.3683.68"
+  chrome: "73.0"
   firefox: "65.0"
 
 git:
