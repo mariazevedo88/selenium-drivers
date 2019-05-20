@@ -32,7 +32,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		
 		<selenium.version>3.141.59</selenium.version>
-		<selenium-driver.version>2.52.0</selenium-driver.version>
+		<driver.version>2.35.1</driver.version>
 		<jackson-databind.version>2.9.9</jackson-databind.version>
 		<poi.version>4.1.0</poi.version>
 		<log4j.version>1.2.17</log4j.version>
@@ -81,8 +81,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-htmlunit-driver</artifactId>
-			<version>${selenium-driver.version}</version>
+			<artifactId>htmlunit-driver</artifactId>
+			<version>${driver.version}</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
