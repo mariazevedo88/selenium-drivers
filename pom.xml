@@ -54,7 +54,7 @@
 		<connection>scm:git:git://github.com/mariazevedo88/selenium-drivers.git</connection>
 		<developerConnection>scm:git:git@github.com:mariazevedo88/selenium-drivers.git</developerConnection>
 		<url>https://github.com/mariazevedo88/selenium-drivers</url>
-		<tag>selenium-drivers-1.0.0</tag>
+		<tag>selenium-drivers-1.0.2</tag>
 	</scm>
 	
 	<distributionManagement>

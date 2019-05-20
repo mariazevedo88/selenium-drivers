@@ -16,8 +16,21 @@ Project that implements services that execute drivers used in Selenium.
 - [Selenium (3.141.59)](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.141.59)
 - [JUnit 5 (5.4.0)](https://junit.org/junit5/docs/current/user-guide/)
 - [Jackson Databind (2.9.9)](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.9.9)
-- [Apache Poi (3.8)](https://mvnrepository.com/artifact/org.apache.poi/poi/3.8)
+- [Apache Poi (4.1.0)](https://mvnrepository.com/artifact/org.apache.poi/poi/4.1.0)
 - [log4j (1.2.17)](https://mvnrepository.com/artifact/log4j/log4j/1.2.17)
+
+## How to use
+
+You must import .jar into the classpath of your project. If your project is a maven project, just set it as dependency in `pom.xml`, as follows:
+
+```
+<dependency>
+    <groupId>io.github.mariazevedo88</groupId>
+    <artifactId>selenium-drivers</artifactId>
+    <version>1.0.3</version>
+</dependency>
+
+```
 
 ## Contributing
 
