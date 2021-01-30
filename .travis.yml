@@ -17,4 +17,4 @@ before_install:
   - chmod +x src/main/resources/drivers/geckodriver
 
 after_success:
-  - mvn clean test verify install jacoco:report coveralls:report #generate Jacoco reports
+  - mvn verify jacoco:report coveralls:report #generate Jacoco reports
