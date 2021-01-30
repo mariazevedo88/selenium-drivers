@@ -2,7 +2,7 @@
   	<modelVersion>4.0.0</modelVersion>
   	<groupId>io.github.mariazevedo88</groupId>
   	<artifactId>selenium-drivers</artifactId>
-  	<version>1.0.4-SNAPSHOT</version>
+  	<version>1.0.4</version>
   
   	<name>selenium-drivers</name>
   	<description>Project that implements services that execute drivers used in Selenium</description>
@@ -54,7 +54,7 @@
 		<connection>scm:git:git://github.com/mariazevedo88/selenium-drivers.git</connection>
 		<developerConnection>scm:git:git@github.com:mariazevedo88/selenium-drivers.git</developerConnection>
 		<url>https://github.com/mariazevedo88/selenium-drivers</url>
-		<tag>HEAD</tag>
+		<tag>selenium-drivers-1.0.4</tag>
 	</scm>
 	
 	<distributionManagement>
@@ -159,7 +159,7 @@
 			  	<artifactId>maven-assembly-plugin</artifactId>
 			  	<configuration>
 			    	<archive>
-			      		<manifest><mainClass/></manifest>
+			      		<manifest><mainClass /></manifest>
 			    	</archive>
 			    	<descriptorRefs>
 			      		<descriptorRef>jar-with-dependencies</descriptorRef>
@@ -182,7 +182,7 @@
 				<configuration>
 					<archive>
 				    	<manifest>
-							<mainClass/>
+							<mainClass />
 				    	</manifest>
 				  	</archive>
 				</configuration>
