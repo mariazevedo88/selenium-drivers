@@ -1,11 +1,11 @@
 language: java
 sudo: true
-dist: trusty
+dist: xenial
 jdk:
   - oraclejdk8
 addons:
   chrome: stable
-  firefox: "65.0"
+  firefox: "85.0"
 
 git:
   depth: 2 #clone repository to a maximum depth of 2 commits
