@@ -2,7 +2,7 @@
   	<modelVersion>4.0.0</modelVersion>
   	<groupId>io.github.mariazevedo88</groupId>
   	<artifactId>selenium-drivers</artifactId>
-  	<version>1.0.4</version>
+  	<version>1.0.5-SNAPSHOT</version>
   
   	<name>selenium-drivers</name>
   	<description>Project that implements services that execute drivers used in Selenium</description>
@@ -54,7 +54,7 @@
 		<connection>scm:git:git://github.com/mariazevedo88/selenium-drivers.git</connection>
 		<developerConnection>scm:git:git@github.com:mariazevedo88/selenium-drivers.git</developerConnection>
 		<url>https://github.com/mariazevedo88/selenium-drivers</url>
-		<tag>selenium-drivers-1.0.4</tag>
+		<tag>HEAD</tag>
 	</scm>
 	
 	<distributionManagement>
