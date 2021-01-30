@@ -2,7 +2,8 @@ language: java
 sudo: true
 dist: xenial
 jdk:
-  - oraclejdk8
+  - oraclejdk11
+  - openjdk11
 addons:
   chrome: stable
   firefox: "85.0"
