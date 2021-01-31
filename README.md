@@ -15,8 +15,8 @@ Project that implements services that execute drivers used in Selenium.
 - [Java 8](https://www.oracle.com/technetwork/pt/java/javase/downloads/index.html)
 - [Selenium (3.141.59)](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.141.59)
 - [JUnit 5 (5.4.0)](https://junit.org/junit5/docs/current/user-guide/)
-- [Jackson Databind (2.9.9)](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.9.9)
-- [Apache Poi (4.1.0)](https://mvnrepository.com/artifact/org.apache.poi/poi/4.1.0)
+- [Jackson Databind (2.12.0)](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.12.0)
+- [Apache Poi (4.1.2)](https://mvnrepository.com/artifact/org.apache.poi/poi/4.1.2)
 - [log4j (1.2.17)](https://mvnrepository.com/artifact/log4j/log4j/1.2.17)
 
 ## How to use
@@ -27,11 +27,7 @@ You must import .jar into the classpath of your project. If your project is a ma
 <dependency>
     <groupId>io.github.mariazevedo88</groupId>
     <artifactId>selenium-drivers</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 </dependency>
 
 ```
-
-## Contributing
-
-[![](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/images/0)](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/links/0)[![](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/images/1)](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/links/1)[![](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/images/2)](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/links/2)[![](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/images/3)](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/links/3)[![](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/images/4)](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/links/4)[![](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/images/5)](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/links/5)[![](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/images/6)](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/links/6)[![](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/images/7)](https://sourcerer.io/fame/mariazevedo88/mariazevedo88/selenium-drivers/links/7)
