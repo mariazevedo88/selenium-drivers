@@ -32,7 +32,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		
 		<selenium.version>3.141.59</selenium.version>
-		<driver.version>2.46.0</driver.version>
+		<driver.version>2.47.1</driver.version>
 		<jackson-databind.version>2.12.1</jackson-databind.version>
 		<poi.version>4.1.2</poi.version>
 		<log4j.version>1.2.17</log4j.version>
